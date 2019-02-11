@@ -52,8 +52,8 @@ public class CellCalc {
 	calculate.addActionListener(new ActionListener()
 	{
 	public void actionPerformed(ActionEvent e) {
-		double drate =  rate.getText();
-		int ihours = hours.getText();
+		double drate =  Double.parseDouble(rate.getText());
+		int ihours = Integer.parseInt(hours.getText());
 		salary.setText(""+ihours *drate * 52);
 			}
 		}
